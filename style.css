@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;600;700&family=Montserrat:wght@400;500;600&display=swap');
+
+:root {
+    --bg-color: #E6DDED;      /* 60/70% */
+    --card-bg: #DEDCFF;       /* 25/30% */
+    --accent-color: #D0A2CC;  /* 5/10% */
+    --text-color: #2b2533;
+    --text-muted: #5f576b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--card-bg) !important;
+    border-bottom: 1px solid rgba(208, 162, 204, 0.4);
+}
+
+.logo, .navbar-brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--text-color) !important;
+}
+
+/* Liens du menu de navigation */
+.nav-link {
+    color: #D0A2CC !important;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #D0A2CC !important;
+    opacity: 0.8;
+    border-bottom: 2px solid #D0A2CC;
+}
+
+/* Boutons / Blocs pour la page contact */
+.btn-contact {
+    display: inline-block;
+    background-color: #D0A2CC;
+    color: #ffffff !important;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    border: 2px solid #D0A2CC;
+    transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-contact:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+    box-shadow: 0 6px 14px rgba(208, 162, 204, 0.4);
+    color: #ffffff !important;
+}
+
+/* Variante bouton pour le numéro de téléphone */
+.btn-contact-outline {
+    display: inline-block;
+    background-color: transparent;
+    color: #D0A2CC !important;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: 2px solid #D0A2CC;
+    transition: all 0.2s ease;
+}
+
+.btn-contact-outline:hover {
+    background-color: #D0A2CC;
+    color: #ffffff !important;
+}
+
+h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Carte générale */
+.carte-portfolio {
+    background: #ffffff;
+    border: 1px solid rgba(208, 162, 204, 0.35);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carte-portfolio:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Zone d'image Musique (2 côte à côte) */
+.img-musique {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    background-color: var(--card-bg);
+}
+
+/* Zone d'image Basket (3 par ligne, hauteur calibrée pour ne pas envahir l'écran) */
+.img-basket {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    background-color: var(--card-bg);
+}
+
+footer {
+    background-color: var(--card-bg);
+    border-top: 1px solid rgba(208, 162, 204, 0.4);
+    color: var(--text-muted);
+}
